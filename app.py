@@ -1,11 +1,10 @@
-from flask import Flask, render_template
+import unittest
+import pandas as pd
 
-app = Flask(__name__)
+class SimpleTest(unittest.TestCase):
+	def test_validation(self):
+		self.assertTrue(True)
 
+if __name__=="__main__":
+	unittest.main()
 
-@app.route('/')
-def hello_whale():
-    return render_template("whale_hello.html")
-
-if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0')
