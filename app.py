@@ -1,7 +1,6 @@
 import pandas as pd
 from configparser import ConfigParser
 import tableauserverclient as TSC
-import psycopg2
 from pandas.util.testing import assert_frame_equal
 from parameterized import parameterized
 import unittest
